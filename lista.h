@@ -127,7 +127,9 @@ Lista Mezclar(Lista a,Lista b){
 		a=resto(a);
 		b=resto(b);	
 	}
-	lo = cons(cabeza(a),lo);
+	if(!esvacia(a)){
+		lo = cons(cabeza(a),lo);
+	}
 	return lo;
 }
 
